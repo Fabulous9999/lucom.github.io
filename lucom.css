@@ -1,0 +1,143 @@
+* {
+    background: linear-gradient(to left, rgb(8, 5, 5), rgb(22, 10, 22));
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.section__subtitle {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-weight: bold;
+    padding: 25px;
+    margin: 20px;
+}
+
+.section__title {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-weight: bold;
+    padding: 25px;
+    margin: 20px;
+}
+
+.work__container{
+    padding-top: 1rem;
+}
+
+.work__filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+}
+
+.work__item {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    padding: .25rem .75rem;
+    font-weight: bold;
+    border-radius: .5rem;
+    background: rgb(97, 36, 97);
+}
+
+.work__item:hover {
+    background-color: crimson;
+    color: black;
+}
+
+.work__card{
+    background-color: rgb(71, 60, 60);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid white;
+    box-shadow: 2px 2px 5px blue;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.work__card:hover {
+    opacity: 0.5;
+    transform: scale(1.05);
+    transition: .4s ease-in-out;
+}
+
+.work__img {
+    border-radius: 1rem;
+    margin-bottom: .75rem;
+}
+
+.work__title {
+    font-size: large;
+    font-weight: bold;
+    margin: 5px;
+    background: transparent;
+    
+}
+
+.work__button {
+    width: max-content;
+    color: rgb(255, 94, 0);
+    font-size: small;
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+}
+
+.work__button:hover .work__icon {
+    transform: translateX(.25rem);
+}
+
+.work__icon {
+    font-size: 1rem;
+}
+
+.active-work {
+    background-color: rgb(54, 104, 148);
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    align-content: center;
+    row-gap: 40px;
+    justify-content: space-between;
+}
+
+/* .grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.work__card {
+    width: 500px;
+} */
+
+@media (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+
+.work__button {
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.work__button:hover {
+    text-decoration: none;
+    color: deeppink;
+    border: 1px solid rgb(0, 0, 0);
+    background: lawngreen;
+}
